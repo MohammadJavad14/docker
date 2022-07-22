@@ -1,4 +1,4 @@
-- # Running Linux
+# Running Linux
 	- Go to docker hub
 	- Search for ubuntu
 	- copy the command: docker pull ubuntu
@@ -14,7 +14,7 @@
         - echo $0
         - history
         
-- # Managing Packages
+# Managing Packages
     - apt: advanced package tool
     - apt-get
     - nano: basic text editor for linux
@@ -23,7 +23,7 @@
     - again: apt install nano
     - apt remove nano
 
-- # Navigating the File System
+# Navigating the File System
     - pwd: print working directory
     - ls: list
     - ls -1: list one file per line
@@ -35,7 +35,7 @@
     - ls /foo or ls foo: show the list of file of directory inside the path
     - cd ~: navigate to home directory
 
-- # Manipulating Files and Directories
+# Manipulating Files and Directories
     - mkdir test: making a new directory called test
     - mv test docker: rename the test directory to docker
     - touch hello.txt: create a new file
@@ -46,3 +46,22 @@
     - rm file*: remove all file which starts with file
     - rm docker/: getting an error "docker/" is a directory
     - rm -r docker/: remove a directory and all files inside it
+
+# Editing and Viewing Files 
+    - apt install nano
+    - nano file.txt: open the file and do some thing
+    - ^X: for exiting
+    - cat file.txt: to see the content of this file usually used for displaying short file
+    - more file.txt: to see the long files
+        - press space for go to next page
+        - press enter go one line down
+        - there is no way to go up
+        - for that you can use less
+        - to exit press q
+    - apt install less
+        - use up and down arrow 
+        - press space for go to next page
+        - press enter go one line down
+        - to exit press q
+    - head -n 5 file.txt: shows the first 5 line of the file
+    - tail -n 5 file.txt: shows the last 5 line of the file
