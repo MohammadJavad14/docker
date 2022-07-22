@@ -67,5 +67,11 @@
     - tail -n 5 file.txt: shows the last 5 line of the file
 # Redirection
     - cat file1.txt > file2.txt: redirect the output from the screen to file2.txt
-    - <: less than operator used for redirect the input
-     
+    - <: less than operator used for redirect the input  
+# Searching for Text
+    - grep hello file.txt: global regular expression print, search for word hello in file.txt
+    - grep -i: removes case sensitivity from the search
+    - grep -i hello file1.txt file2.txt: search in multiple files
+    - grep -i hello file*: search all files with this pattern
+    - grep -i -r hello /foo: search for directory and all its subdirectory
+    - grep -ir hello /foo: combines the two -i and -r options
