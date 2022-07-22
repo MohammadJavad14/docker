@@ -48,8 +48,8 @@
     - rm -r docker/: remove a directory and all files inside it
 
 # Editing and Viewing Files
-    -apt install nano
-    -nano file.txt: open the file and do some thing
+    - apt install nano
+    - nano file.txt: open the file and do some thing
     - ^X: for exiting
     - cat file.txt: to see the content of this file usually used for displaying short file
     - more file.txt: to see the long files
