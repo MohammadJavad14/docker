@@ -34,3 +34,15 @@
     - cd ..: go back one step
     - ls /foo or ls foo: show the list of file of directory inside the path
     - cd ~: navigate to home directory
+
+- # Manipulating Files and Directories
+    - mkdir test: making a new directory called test
+    - mv test docker: rename the test directory to docker
+    - touch hello.txt: create a new file
+    - touch file1.txt file2.txt: creating multiple files in one command
+    - mv hello.txt hello-docker.txt: rename the hello.txt to hello-docker.txt
+    - mv hello.txt /etc: move the hello.txt file to /etc directory
+    - rm file1.txt file2.txt: remove one or more file
+    - rm file*: remove all file which starts with file
+    - rm docker/: getting an error "docker/" is a directory
+    - rm -r docker/: remove a directory and all files inside it
