@@ -83,3 +83,14 @@
     - find /foo -type f: only show the files in the path
     - find /foo -type f -name "bar*": filtering results by name
     - find /foo -type f -iname "bar*": filtering results by name without case sensitivity
+# Chaining Commands
+    - mkdir test; cd test; echo done
+    - cd ..
+    - repeat last command: result an error and the two command after the first will execute
+    - mkdir test && cd test && echo done: to stop execute after an error
+    - mkdir test || echo "directory exists": if the first command executed the second one will not
+    - ls /bin | less: piping, run the fist command and send the result for second command
+    - mkdir hello;\
+      cd hello;\
+      echo done;
+      : splitting a command in multiple line
