@@ -26,6 +26,7 @@
 # Navigating the File System
     - pwd: print working directory
     - ls: list
+    - ls -a: list all the files also hidden files
     - ls -1: list one file per line
     - ls -l: list with long listing
     - cd: change directory
@@ -75,3 +76,10 @@
     - grep -i hello file*: search all files with this pattern
     - grep -i -r hello /foo: search for directory and all its subdirectory
     - grep -ir hello /foo: combines the two -i and -r options
+# Finding Files and Directories
+    - find: show all the files and directories recessively
+    - find /foo: show all the files in the path
+    - find /foo -type d: only show the directories in the path
+    - find /foo -type f: only show the files in the path
+    - find /foo -type f -name "bar*": filtering results by name
+    - find /foo -type f -iname "bar*": filtering results by name without case sensitivity
