@@ -65,3 +65,7 @@
         - to exit press q
     - head -n 5 file.txt: shows the first 5 line of the file
     - tail -n 5 file.txt: shows the last 5 line of the file
+# Redirection
+    - cat file1.txt > file2.txt: redirect the output from the screen to file2.txt
+    - <: less than operator used for redirect the input
+     
