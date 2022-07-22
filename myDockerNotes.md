@@ -94,3 +94,11 @@
       cd hello;\
       echo done;
       : splitting a command in multiple line
+# Environment Variables
+    - printenv: print all environment variables
+    - printenv PATH: print the value of PATH variable
+    - echo $PATH: print the value of PATH 
+    - export DB_USER=mohammad: set an environment variable. it is only available in this terminal session
+    - echo DB_USER=mohammad >> .bashrc: appending this line to .bashrc file, it is just available in next terminal session
+    - source .bashrc: for reloading .bashrc if we are in home dir
+    - source ~./bashrc: if we are not in home dir
