@@ -102,6 +102,6 @@
     - echo DB_USER=mohammad >> .bashrc: appending this line to .bashrc file, it is just available in next terminal session
     - source .bashrc: for reloading .bashrc if we are in home dir
     - source ~./bashrc: if we are not in home dir
-# Managing processes
+# Managing Processes
     - ps: show the running processes 
     - kill process id: killing the process
