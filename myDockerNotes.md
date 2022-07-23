@@ -105,3 +105,11 @@
 # Managing Processes
     - ps: show the running processes 
     - kill process id: killing the process
+# Managing Users
+    - useradd -m username: create the user's home directory
+    - cat /etc/passwd: to see the user info
+    - usermod -s /bin/bash john: modify the john's shell
+    - cat /etc/shadow: shows the passwords
+    - docker exec -it -u john ps_id bash: login as john
+    - userdel john: delete the use john
+    - adduser bob: more interactive than the useradd 
