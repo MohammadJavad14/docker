@@ -113,3 +113,9 @@
     - docker exec -it -u john ps_id bash: login as john
     - userdel john: delete the use john
     - adduser bob: more interactive than the useradd 
+# Managing Group
+    - groupadd developers: create a group called developers
+    - cat /etc/group: shows the groups
+    - usermod -G developers john: new list of supplementary GROUPS
+    - cat /etc/passwd | grep john OR grep john /etc/passwd: shows the record only for john
+    - groups john: show the list of john's groups
