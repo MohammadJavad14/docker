@@ -119,3 +119,9 @@
     - usermod -G developers john: new list of supplementary GROUPS
     - cat /etc/passwd | grep john OR grep john /etc/passwd: shows the record only for john
     - groups john: show the list of john's groups
+# File Permissions
+    - chmod u+x deploy.sh: change mode of deploy.sh file for root user to add the execute permission
+    - chmod o+x deploy.sh: change mode of deploy.sh file for other users to add the execute permission
+    - chmod og+x+w-r: combine others and groups and give the execute and write and delete the read permission
+
+     
